@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "8c360326-2948-4f91-af1e-bf20d66a2f73",
+		"name": "PostMamCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23586381"
+	},
+	"item": [
+		{
+			"name": "GetAllFridges",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7069/api/fridge",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductsInFridge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7069/api/fridge/36b5e304-6b86-4097-9af6-3fe7792b02e1/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge",
+						"36b5e304-6b86-4097-9af6-3fe7792b02e1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Bread\",\r\n\"quantity\": 1,\r\n\"default_quantity\": 3 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7069/api/fridge/4fb88ac7-616b-4763-aa44-76523d9a6051/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge",
+						"4fb88ac7-616b-4763-aa44-76523d9a6051",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7069/api/fridge/36b5e304-6b86-4097-9af6-3fe7792b02e1/products/d5605993-f8e9-4a04-bd17-00405cc9c9c0",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge",
+						"36b5e304-6b86-4097-9af6-3fe7792b02e1",
+						"products",
+						"d5605993-f8e9-4a04-bd17-00405cc9c9c0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sausage\",\r\n    \"quantity\": 6,\r\n    \"default_quantity\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7069/api/fridge/4fb88ac7-616b-4763-aa44-76523d9a6051/products/d5605993-f8e9-4a04-bd17-00405cc9c9c0",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge",
+						"4fb88ac7-616b-4763-aa44-76523d9a6051",
+						"products",
+						"d5605993-f8e9-4a04-bd17-00405cc9c9c0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"Lebron\",\r\n    \"lastname\": \"James\",\r\n    \"username\": \"KingJames\",\r\n    \"password\": \"Lebrons13Soldier\",\r\n    \"email\": \"kingjames.23@gmail.com\",\r\n    \"phonenumber\": \"345-769\",\r\n    \"roles\":\r\n    [\r\n        \"User\"\r\n    ]  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7069/api/authentication",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authorization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mouz\",\r\n    \"password\": \"Vad2463425\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7069/api/authentication/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"authentication",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StoredProcedureCall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7069/api/fridge/productswithzeroquantity",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge",
+						"productswithzeroquantity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddFridge",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Samsung\",\r\n    \"owner_name\": \"Garry\",\r\n    \"nameofmodel\": \"StarGaze\",\r\n    \"year\": 2022\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7069/api/fridge",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteFridge",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7069/api/fridge/c02e5d31-5abf-46b2-b950-08daa7367b33",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge",
+						"c02e5d31-5abf-46b2-b950-08daa7367b33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateFridge",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Samsung\",\r\n    \"owner_name\": \"Bob\",\r\n    \"nameofmodel\": \"StarGaze\",\r\n    \"year\": 2023\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7069/api/fridge/01ba8410-dafa-4b77-05ba-08daa780f522",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"fridge",
+						"01ba8410-dafa-4b77-05ba-08daa780f522"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

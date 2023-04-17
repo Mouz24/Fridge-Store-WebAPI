@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\FrigdeProductsProjectAPI\WebApiTests\bin\Release\net6.0\CoverletSourceRootsMapping
+C:\Users\user\source\repos\FrigdeProductsProjectAPI\WebApiTests\obj\Release\net6.0\WebApiTests.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\FrigdeProductsProjectAPI\WebApiTests\obj\Release\net6.0\WebApiTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\FrigdeProductsProjectAPI\WebApiTests\obj\Release\net6.0\WebApiTests.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\FrigdeProductsProjectAPI\WebApiTests\obj\Release\net6.0\WebApiTests.AssemblyInfo.cs
+C:\Users\user\source\repos\FrigdeProductsProjectAPI\WebApiTests\obj\Release\net6.0\WebApiTests.csproj.CoreCompileInputs.cache
